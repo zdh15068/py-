@@ -6,7 +6,7 @@ headers = {
 def IMGbz():
     num = 1
     for page in range(1,10):
-        print('=======正在爬取第一页的数据======='.format(page))
+        print('=======正在爬取第{}页的数据======='.format(page))
         url = 'http://acg17.com/category/meitu/pixiv-painter/page/{}/'.format(page)
         response = requests.get(url=url,headers=headers)
         response.encoding = response.apparent_encoding
